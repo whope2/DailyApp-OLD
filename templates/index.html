@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cook like a boss!</title>	
+
+	<style type="text/css">    
+
+  #image{border: 6px ridge rgb(228, 99, 82);}
+  
+  img {
+    width: 60%;
+    height: auto;
+    max-width: 600;
+    min-width: 400;
+  }
+
+  body
+  {
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the content */
+  .content {
+    background-color: #ddd;
+    padding: 10px;
+  }
+
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  h1
+  {
+    font-size:36px;
+    color:rgb(20, 3, 104);
+  }
+
+  h2
+  {
+    font-size:24px;
+    font-style: italic;
+    color:rgb(31, 4, 161);
+
+  p {
+    }
+         
+  </style>
+
+</head>  
+  
+<body>
+
+  <div class="topnav">
+    <a href="https://www.instagram.com/tothemaxx2020">Instagram</a>
+  </div>
+
+  <div id="main-div" class="content">
+   <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="title"></input><br>
+    <img id="image" src="static/Turkey.PNG" alt="21-pound Turkey"> <br>
+    <textarea rows = "3" cols = "60" name = "description">
+A 21-pound turkey, toasted on a Thansgiving day five years ago.  It was tasty, cripy and juicy. It served my family of four and we all had a great memory.
+   </textarea><br>    
+   <input type="file" name="file"/><br>
+   <input type="submit" value="Upload"/>
+  </form> 
+  </div>
+</body>
+</html>
